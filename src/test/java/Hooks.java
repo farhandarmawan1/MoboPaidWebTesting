@@ -1,5 +1,3 @@
-package step_definitions;
-
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,7 +13,7 @@ public class Hooks {
         a.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
         webDriver= new ChromeDriver(a);
-        String URL = "https://aps-rejanglebong.skwn.dev/dev/";
+        String URL = "https://stage.mobipaid.com/en/register";
         webDriver.get(URL);
         webDriver.manage().window().maximize();
     }
