@@ -70,7 +70,7 @@ public class RegisterStepdefs {
     }
 
 
-    @And("^user select dropdown country \"([^\"]*)\"$")
+    @And("^user select dropdown country south africa nedbank")
     public void userSelectDropdownCountry() throws Throwable {
         RegisterUser registerUser = new RegisterUser(webDriver);
         registerUser.setClickSelectCountry();
@@ -82,8 +82,7 @@ public class RegisterStepdefs {
     @And("^user click terms privacy statment$")
     public void userClickTermsPrivacyStatment() throws InterruptedException {
         RegisterUser registerUser = new RegisterUser(webDriver);
-        registerUser.setClickSelectCountry();
-        registerUser.setSelectCountry();
+        registerUser.setCeklisBox();
         Thread.sleep(1000);
     }
 
@@ -91,7 +90,7 @@ public class RegisterStepdefs {
     public void userClickButtonNextStep() throws InterruptedException {
         RegisterUser registerUser = new RegisterUser(webDriver);
         registerUser.setBtnResgister();
-        Thread.sleep(1000);
+        Thread.sleep(15000);
     }
 
     @And("^user succesfuly registered account$")
@@ -102,7 +101,7 @@ public class RegisterStepdefs {
         Thread.sleep(1000);
     }
 
-    @And("^user select dropdown state \"([^\"]*)\"$")
+    @And("user select dropdown state gauteng")
     public void userSelectDropdownState() throws Throwable {
         RegisterUser registerUser = new RegisterUser(webDriver);
         registerUser.setClickSelectState();
